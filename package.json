@@ -1,11 +1,10 @@
 {
   "name": "slush-relish-phaser-project",
-  "version": "0.3.0",
-  "description": "A slush generator for createing phaser games using es6 module system - forked from pixelpicosean/slush-phaser-project",
+  "version": "0.1.0",
+  "description": "A slush generator for creating phaser games using browserify - based on a fork of pixelpicosean/slush-phaser-project",
   "keywords": [
     "slushgenerator",
     "phaser",
-    "es6",
     "browser-sync"
   ],
   "author": "Relish",

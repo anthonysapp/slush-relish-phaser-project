@@ -1,4 +1,4 @@
 slush-relish-phaser-project
 ===========================
 
-normal js version of the previous es6 enabled slush phaser project generator
+Browserify enabled version of the previous es6 slush phaser project generator
