@@ -1,0 +1,42 @@
+{
+  "name": "slush-relish-phaser-project",
+  "version": "0.3.0",
+  "description": "A slush generator for createing phaser games using es6 module system - forked from pixelpicosean/slush-phaser-project",
+  "keywords": [
+    "slushgenerator",
+    "phaser",
+    "es6",
+    "browser-sync"
+  ],
+  "author": "Relish",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonysapp/slush-relish-phaser-project"
+  },
+  "bugs": {
+    "url": "https://github.com/anthonysapp/slush-relish-phaser-project/issues"
+  },
+  "licence": "MIT",
+  "main": "src/commands/cli",
+  "preferGlobal": "true",
+  "bin": {
+    "phaser": "./bin/phaser"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "commander": "^2.3.0",
+    "gulp": "3.8.7",
+    "gulp-conflict": "0.2.0",
+    "gulp-filter": "1.0.0",
+    "gulp-install": "0.2.0",
+    "gulp-rename": "1.2.0",
+    "gulp-replace": "^0.4.0",
+    "gulp-template": "1.0.0",
+    "gulp-util": "^3.0.0",
+    "inquirer": "0.6.0",
+    "minimist": "^1.1.0",
+    "tildify": "^1.0.0"
+  }
+}
