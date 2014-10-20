@@ -124,7 +124,8 @@ gulp.task('default', function(done) {
             '**/*.json',
             '**/*.js',
             '**/*.html',
-            '**/*.manifest'
+            '**/*.manifest',
+            '**/*.xml'
         ]);
 
         // Config phaser path
@@ -158,6 +159,15 @@ gulp.task('default', function(done) {
                 }
             }
         }
+
+        gulp.src([__dirname + '/templates/.idea/**'])
+            .pipe(needTemplateFilter)
+            .pipe(template(answers))
+            .pipe(needTemplateFilter.restore())
+            .pipe(conflict('./'))
+            .pipe(gulp.dest('./'))
+            .pipe(install())
+            .pipe(gulp.dest('./.idea/'));
 
         gulp.src([__dirname + '/templates/**'])
             .pipe(needTemplateFilter)

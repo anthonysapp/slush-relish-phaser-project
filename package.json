@@ -1,6 +1,6 @@
 {
   "name": "slush-relish-phaser-project",
-  "version": "0.1.0",
+  "version": "0.1.22",
   "description": "A slush generator for creating phaser games using browserify - based on a fork of pixelpicosean/slush-phaser-project",
   "keywords": [
     "slushgenerator",

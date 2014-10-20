@@ -1,5 +1,5 @@
 var Boot = function () {
-
+    this.super = '';
 }
 
 Boot.prototype = Object.create(Phaser.State.prototype);
@@ -26,7 +26,6 @@ Boot.prototype = {
         this.game.scale.setScreenSize(true);
 
         this.game.state.start('preload', true, false);
-
     }
 
 }

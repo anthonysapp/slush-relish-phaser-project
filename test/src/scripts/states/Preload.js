@@ -19,6 +19,8 @@ Preload.prototype = {
         /*
          this.load.image('logo', 'assets/logo.png');
          */
+
+        //this.load.setPreloadSprite()
     },
 
     create: function () {

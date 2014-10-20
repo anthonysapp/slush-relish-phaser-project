@@ -1,0 +1,11 @@
+{
+  "name": "test2",
+  "version": "0.0.1",
+  "description": "test2 is great",
+  "authors": [
+    ""
+  ],
+  "dependencies": {
+    "phaser-official": "latest"
+  }
+}
