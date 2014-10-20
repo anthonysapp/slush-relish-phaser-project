@@ -114,6 +114,7 @@ gulp.task('default', function(done) {
     ],
 
     function(answers) {
+
         if (!answers.moveon) {
             return done();
         }
@@ -134,10 +135,12 @@ gulp.task('default', function(done) {
             'all': 'phaser.js',
             '?': 'custom/phaser-no-libs.js'
         };
+
         answers.phaserPath = phaserPaths[answers['phaserCustom']];
         answers.externalLibs = answers.externalLibs || [];
         answers.needPIXI = false;
         // Config included physics libs
+
         if (answers['phaserCustom'] === '?') {
             // Choose all the 3 ?!
             if (answers['externalLibs'].length === 3) {
@@ -164,9 +167,8 @@ gulp.task('default', function(done) {
             .pipe(template(answers))
             .pipe(needTemplateFilter.restore())
             .pipe(conflict('./'))
-            .pipe(gulp.dest('./'))
+            .pipe(gulp.dest('./.idea/'))
             .pipe(install())
-            .pipe(gulp.dest('./.idea/'));
 
         gulp.src([__dirname + '/templates/**'])
             .pipe(needTemplateFilter)
