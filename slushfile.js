@@ -9,7 +9,6 @@ var gulp = require('gulp'),
     inquirer = require('inquirer');
 
 gulp.task('default', function(done) {
-
     inquirer.prompt([
         {
             type: 'input',
