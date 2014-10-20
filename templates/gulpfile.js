@@ -23,7 +23,7 @@ global[ 'paths' ] = {
     'temp'   : '.tmp',
     'product': 'dist',
     'less': 'src/less/*.less',
-    'scripts': 'src/scripts/**/*/.js',
+    'scripts': 'src/scripts/**/*.js',
     'js':'./src/scripts'
 };
 
