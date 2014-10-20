@@ -162,14 +162,6 @@ gulp.task('default', function(done) {
             }
         }
 
-        gulp.src([__dirname + '/templates/.idea/**'])
-            .pipe(needTemplateFilter)
-            .pipe(template(answers))
-            .pipe(needTemplateFilter.restore())
-            .pipe(conflict('./'))
-            .pipe(gulp.dest('./.idea/'))
-            .pipe(install())
-
         gulp.src([__dirname + '/templates/**'])
             .pipe(needTemplateFilter)
             .pipe(template(answers))
