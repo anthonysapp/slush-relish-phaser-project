@@ -1,6 +1,6 @@
 var Game = function () {
 
-}
+};
 
 Game.prototype = Object.create(Phaser.State.prototype);
 Game.prototype.constructor = Game;
@@ -11,6 +11,6 @@ Game.prototype = {
         console.log('Hello Game!');
     }
 
-}
+};
 
 module.exports = Game;

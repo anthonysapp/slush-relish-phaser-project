@@ -1,13 +1,13 @@
 var Menu = function () {
 
-}
+};
 
 Menu.prototype = Object.create(Phaser.State.prototype);
 Menu.prototype.constructor = Menu;
 
 Menu.prototype = {
 
-    init: function (settings) {
+    init: function () {
 
     },
 
@@ -18,6 +18,6 @@ Menu.prototype = {
     startGame: function () {
         this.game.state.start('game');
     }
-}
+};
 
 module.exports = Menu;

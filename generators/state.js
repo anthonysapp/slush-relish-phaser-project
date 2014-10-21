@@ -7,7 +7,7 @@ __NAMESPACE__.prototype.constructor = __NAMESPACE__;
 
 __NAMESPACE__.prototype = {
 
-    init: function(settings){
+    init: function(){
 
     },
 

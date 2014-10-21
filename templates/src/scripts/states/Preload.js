@@ -1,6 +1,6 @@
 var Preload = function () {
 
-}
+};
 
 Preload.prototype = Object.create(Phaser.State.prototype);
 Preload.prototype.constructor = Preload;
@@ -26,6 +26,6 @@ Preload.prototype = {
         this.game.state.start('menu', true, false);
     }
 
-}
+};
 
 module.exports = Preload;
