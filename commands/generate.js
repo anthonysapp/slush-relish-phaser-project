@@ -108,9 +108,9 @@ function setupTask(generator) {
         // handle the error case when arg is state:my-state
         // state name has to be dashized string
         // here does not handle the nested path case
-        if (type === 'state' && pathNested) {
+        if ((type === 'state' || type == 'gamestate') && pathNested) {
             gutil.log(
-                gutil.colors.red('[-Error:] Scenes can not be a nested')
+                gutil.colors.red('[-Error:] States can not be a nested')
             );
             gutil.log(
                 gutil.colors.red('[-Error:] Generate task has been canceled')
@@ -150,7 +150,7 @@ function setupTask(generator) {
         // if it is a string, simple call generatorEngine once
         // else it is an object(array), repeat the generatorEngine call
         if (typeof srcPath === 'string') {
-            dirName = (type === 'state') ? 'states' : '';
+            dirName = (type === 'state' || type === 'gamestate') ? 'states' : '';
             finalPath = pathNested ? dirName + pathName : '/' + dirName;
             destPath =  path.resolve('src/scripts') + finalPath;
 
@@ -172,7 +172,9 @@ var generate = function(options) {
         generatorAndTasks = typeAndName.length ? typeAndName.split(':') : undefined,
         validTypes = [
             'state',
+            'gamestate',
             'sprite',
+            'uisprite',
             'group',
             'model'
         ],

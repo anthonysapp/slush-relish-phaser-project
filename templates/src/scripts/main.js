@@ -1,5 +1,4 @@
 var global = require ('./global');
-
 var Analytics = require('./utils/Analytics');
 
 var game, App = {};
@@ -11,7 +10,10 @@ App.start = function() {
         'game-container'
     );
 
+    // add some custom properties to our game
     game.analytics = new Analytics('<%= name %>');
+    game.debugMode = false;
+    game.stateList = [];
 
     game.state.add('boot', require('./states/Boot'));
     game.state.add('preload', require('./states/Preload'));
